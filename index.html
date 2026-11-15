@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuietNotes | Your Personal Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">QuietNotes ✨</div>
+        <p>Your thoughts deserve a beautiful space.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="editor">
+            <h2>Create a Note</h2>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter note title..."
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your thoughts here..."
+            ></textarea>
+
+            <div class="editor-buttons">
+                <button id="saveBtn">Save Note</button>
+                <button id="cancelBtn" class="cancel" hidden>
+                    Cancel
+                </button>
+            </div>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="notes-section">
+            <div class="notes-heading">
+                <h2>My Notes</h2>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Search notes..."
+                >
+            </div>
+
+            <div id="notesList" class="notes-grid"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with care 💜 | QuietNotes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
